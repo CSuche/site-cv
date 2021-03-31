@@ -2,7 +2,8 @@
     padding: 0;
     margin: 0;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lora', serif;
+    letter-spacing: 1.2px;
 }
 
 html, body{
@@ -10,9 +11,26 @@ html, body{
     width: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /*  ====
-    PARALLAX 
+PARALLAX 
 ======== */
+
+.black{
+    background-color: black;
+    transition: 0.3s;
+}
+
+.blackH2{
+    color: white;
+}
 
 #parallax{
     background-image: url(/IMAGES/mountain-5678172_1920.jpg);
@@ -31,32 +49,39 @@ html, body{
     color: seashell;
     font-size: 3rem;
     border-bottom: 1px solid seashell;
-    width: 20rem;
+    width: 24rem;
     margin-bottom: 1rem;
     margin: auto;
     padding-top: 19rem;
     text-align: start;
 }
 
-#parallax p{
+#parallax h4{
     color: seashell;
     margin-left: 49rem;
 }
 /*  ====
-    NAV 
+    NAV + BUTTON
 ======== */
-
-nav{
-    background: rgb(144, 154, 214);
-}
-
 .sticky{
     position: fixed;
     top: 0px;
     width: 100%;
 }
 
-/* nav ul{
+.sticky2{
+    position: fixed;
+    top: 70px;
+    margin-left: 90%;
+    /* width: 100%; */
+}
+
+nav{
+    background: rgb(144, 154, 214);
+}
+
+
+nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -66,26 +91,31 @@ nav{
 
 nav li{
     list-style: none;
-} */
+}
 
-nav{
+/* nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     height: 3rem;
     width: 100%;
-}
+} */
 
 nav a{
     text-decoration: none;
     color: seashell;
     /* height: 100%; */
     /* width: 100%; */
-    padding: 0.94rem 5rem;
+    padding: 0.94rem 4rem;
 }
 
 nav a:hover{
+    background-color: rgba(65, 65, 65, 0.301);
+    transition: 0.3s;
+}
+
+.active{
     background-color: rgba(65, 65, 65, 0.301);
     transition: 0.3s;
 }
@@ -95,7 +125,8 @@ nav a:hover{
 ======== */
 
 main{
-    background: rgb(211, 211, 211);
+    /* background: rgb(211, 211, 211); */
+    background: rgb(235, 235, 235);
 }
 
 .mainDiv, div p, div ul, div h1, .profil h2, footer h1, footer a{
@@ -104,18 +135,22 @@ main{
 
 
 h1{
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     color: rgb(85, 98, 172);
+    font-family: 'Unica One', cursive;
 }
 
 h2{
-    font-size: 1.1rem;
+    font-size: 2rem;
+    font-family: 'Unica One', cursive;
+    font-weight: 400;
 }
 
 .mainDiv, footer{
     /* margin-top: 5rem; */
     padding: 3.5rem 15rem;
+    padding-top: 11rem;
 }
 
 .mainDiv h1{
@@ -133,8 +168,26 @@ h2{
     /* margin-left: -5rem; */
 }
 
+#profil, #formations, #projets{
+    background: white;
+}
+
+#profil{
+    padding-bottom: 8rem;
+}
+
+#profil h1, #Abilities h1, #formations h1, #experiences h1{
+    border-bottom: 1px solid black;
+    padding-bottom: 3rem;
+}
+
 .profil{
     margin-right: 11rem;
+}
+
+.profil p{
+    line-height: 23px;
+    text-align: justify;
 }
 
 #about{
@@ -165,6 +218,83 @@ h2{
 }
 
 /*  ====
+    SKILLS 
+======== */
+.AbilitiesColLeftRight{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid grey;
+}
+
+.lastAbilities{
+    border-bottom: none;
+}
+
+.AbilitiesColLeft, .AbilitiesColRight{
+    width: 48%;
+}
+
+.mainDiv h2{
+    margin-bottom: 1rem;
+}
+
+.Abilities{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.Abilities:hover{
+    /* background: rgb(182, 187, 207); */
+    background: seashell;
+    transition: 0.2s;
+}
+
+.Abilities:hover .star img{
+    margin-left: 0.2rem;
+    transition: 0.2s;
+}
+
+.Abilities .star img{
+    transition: 0.2s;
+}
+
+/*  ====
+    FORMATIONS - EXPERIENCES
+======== */
+
+.formationsColLeftRight, .experiencesColLeftRight{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formationsColLeft, .experiencesColLeft{
+    width: 45%;
+    margin-bottom: 2rem;
+}
+
+.formationsColRight, .experiencesColRight{
+    width: 80%;
+    text-align: justify;
+}
+
+/*  ====
+EXPERIENCES 
+======== */
+
+.experiencesColRight{
+    margin-bottom: 2rem;
+}
+
+.experiencesColRight h3{
+    margin-bottom: 1rem;
+}
+
+
+
+/*  ====
     PROJETS 
 ======== */
 
@@ -193,7 +323,7 @@ h2{
 
 footer{
     background-color: rgb(95, 95, 95);
-    height: 600px;
+    height: 500px;
     margin-top: -1rem;
 }
 
@@ -214,3 +344,17 @@ footer a:hover{
     display: flex;
     flex-direction: column;
 }
+
+#scrollDownBtn {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10%;
+    color: white;
+    cursor: pointer;
+    font-size: 3rem;
+    line-height: 5rem;
+    width: 5rem;
+    /* margin: 18rem 0 0 72rem; */
+    margin: 15rem 0 0 85rem;
+  }
+

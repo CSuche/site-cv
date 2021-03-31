@@ -6,30 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV de Nicolas</title>
     <link rel="stylesheet" href="/style.css">
+
+    <!-- police -->
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- parralax https://www.w3schools.com/howto/howto_css_parallax.asp -->
     <div id="parallax">
         <h1>Nicolas T</h1>
-        <p>Interactive resume</p>
+        <h4>Interactive resume</h4>
+        <button id="scrollDownBtn">⬇️</button>
     </div>
     <nav>
-        <!-- <ul>
-            <li><a href="#info">Info de base</a></li>
-            <li><a href="#skills">Skills</a></li>
+        <ul>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#Abilities">Compétences</a></li>
             <li><a href="#formations">Formations</a></li>
             <li><a href="#experiences">Expériences professionnels</a></li>
-            <li><a href="">Divers</a></li>
-            <li><a href="">Portfolio</a></li>
-        </ul> -->
-        <a href="#profil">Profil</a>
-        <a href="#skills">Skills</a>
-        <a href="#formations">Formations</a>
-        <a href="#experiences">Expériences professionnels</a>
-        <a href="#projets">Projets</a>
-        <a href="#contact">Contact</a>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- <a class="nav" href="#profil">Profil</a>
+        <a class="nav" href="#Abilities">Abilities</a>
+        <a class="nav" href="#formations">Formations</a>
+        <a class="nav" href="#experiences">Expériences professionnels</a>
+        <a class="nav" href="#projets">Projets</a>
+        <a class="nav" href="#contact">Contact</a> -->
 
     </nav>
+    <button id="bouton1" class="sticky2">Black</button>
     <main>
         
         <div class="mainDiv" id="profil">
@@ -57,72 +63,320 @@
             
             
         </div>
-        <div class="mainDiv" id="skills">
-            <h1>Skills</h1>
-            <h2>Français :</h2>
-            <p>Langue maternelle</p>
-            <h2>Anglais :</h2> 
-            <p>Courant : 905/990 au TOEIC, 7/9 à l’IELTS</p>  
-            <h2>HTML</h2>
-            <p>good</p>
-            <h2>CSS</h2>
-            <p>good</p>
-            <h2>JavaScript</h2>
-            <p>fine</p>
+        <div class="mainDiv" id="Abilities">
+            <h1>Compétences</h1>
+            <h2>Compétences informatiques</h2>
+            <div class="AbilitiesColLeftRight">
+                <div class="AbilitiesColLeft">
+                    <div class="Abilities">
+                        <p>HTML</p>
+                        <div class="star">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="Abilities">
+                        <P>CSS</P>
+                        <div class="star">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-5.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="Abilities">
+                        <P>JavaScript</P>
+                        <div class="star">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-5.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-5.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-5.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="AbilitiesColRight">
+                    <div class="Abilities">
+                        <p>WordPress</p>
+                        <div class="star">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-5.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-5.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="Abilities">
+                        <p>PrestaShop</p>
+                        <div class="star">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-5.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-5.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="Abilities">
+                        <p>Magento</p>
+                        <div class="star">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-5.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-5.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2>Langues</h2>
+            <div class="AbilitiesColLeftRight">
+                <div class="AbilitiesColLeft">
+                    <div class="Abilities">
+                        <p>Français</p>
+                        <div class="star">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="Abilities">
+                        <p>Anglais</p>
+                        <div class="star">                    
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-5.svg" alt="">
+                        </div> 
+                    </div>
+                </div>
+                <div class="AbilitiesColRight">
+                    <div class="Abilities">
+                        <p>Cambodgien</p>
+                        <div class="star">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="Abilities">
+                        <p>Japonais</p>
+                        <div class="star">                    
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-5.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-5.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-5.svg" alt="">
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <h2>Outils</h2>
+            <div class="AbilitiesColLeftRight lastAbilities">
+                <div class="AbilitiesColLeft">
+                    <div class="Abilities">
+                        <p>Microsoft Office</p>
+                        <div class="star">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="Abilities">
+                        <p>Visual Studio Code</p>
+                        <div class="star">                    
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-5.svg" alt="">
+                        </div> 
+                    </div>
+                    <div class="Abilities">
+                        <p>Git/Git Flow</p>
+                        <div class="star">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-5.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-5.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="AbilitiesColRight">
+                    <div class="Abilities">
+                        <p>Adobe Photoshop</p>
+                        <div class="star">                    
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-5.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-5.svg" alt="">
+                        </div> 
+                    </div>
+                    <div class="Abilities">
+                        <p>Adobe Illustrator</p>
+                        <div class="star">                    
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-5.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-5.svg" alt="">
+                        </div> 
+                    </div>
+                    <div class="Abilities">
+                        <p>InDesign</p>
+                        <div class="star">                    
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-5.svg" alt="">
+                            <img src="/IMAGES/star/iconmonstr-star-5.svg" alt="">
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            
         </div>
         <div class="mainDiv" id="formations">
             <h1>Formations</h1>
-            <h2>MONTPELLIER BUSINESS SCHOOL</h2>
-            <h3>Montpellier (France)</h3>
-            <p>Master 2 Programme Grande École en majeure Stratégie et Management de Projets et spécialité Conseil en Environnement Numérique</p>
+            <div class="formationsColLeftRight">
+                <div class="formationsColLeft">
+                    <h2>Montpellier Business School</h2>
+                    <p>Montpellier (France)</p>
+                    <p>2016 - 2019</p>
+                </div>
+                <div class="formationsColRight">
+                    <p>Master 2 Programme Grande École en majeure Stratégie et Management de Projets et spécialité Conseil en Environnement Numérique</p>
+                    <p>Le programme Master de Montpellier Business School m'a permis d'étudier le management de projets grâce à  l'utilisation et l'étude d'outils comme le diagramme de Gantt, le WBS et la méthodologie Scrum lors de projets de groupe.</p>
+                </div>
+            </div>
 
-            <h2>INSTITUT UNIVERSITAIRE DE TECHNOLOGIE DE DIJON – AUXERRE Echange universitaire : GADJAH MADA UNIVERSITY</h2>
-            <h3>Yogyakarta (Indonésie)</h3>
-            <p>Diplôme d’Université d’Etudes Technologiques Internationales spécialité techniques de commercialisation (DUETI, Bac +3)</p>
+            <div class="formationsColLeftRight">
+                <div class="formationsColLeft">
+                    <h2>Gadjah Mada University</h2>
+                    <p>Yogyakarta (Indonésie)</p>
+                    <p>2014 - 2015</p>
+                </div>
+                <div class="formationsColRight">
+                    <p>Diplôme d’Université d’Etudes Technologiques Internationales spécialité techniques de commercialisation (DUETI, Bac +3)</p>
+                    <p>Dans la continuité du DUT TC, cette dernière année d'échange universitaire m'a procuré l'opportunité de partir étudier en Asie. L'indonésie me paraissait être un cadre idéal pour étudier le management interculturel et découvrir une nouvelle façon de vivre.</p>
+                </div>
+            </div>
             
-            <h2>INSTITUT UNIVERSITAIRE DE TECHNOLOGIE DU CREUSOT</h2>
-            <h3>Le Creusot (France)</h3>
-            <p>Diplôme Universitaire de Technologie spécialité techniques de commercialisation (DUT TC, Bac+2)</p>
+            <div class="formationsColLeftRight">
+                <div class="formationsColLeft">
+                    <h2>Iut du Creusot</h2>
+                    <p>Le Creusot (France)</p>
+                    <p>2012 - 2014</p>
+                </div>
+                <div class="formationsColRight">
+                    <p>Diplôme Universitaire de Technologie spécialité techniques de commercialisation (DUT TC, Bac+2)</p>
+                    <p>Je me suis orienté dans le commerce pour apprendre le fonctionnement d'une entreprise. Ces deux années m'ont appris à vendre, à négocier, à parler en public ainsi que les différentes fonctions de l'entreprise tels que le marketing, la comptabilité, etc. </p>
+                </div>
+            </div>
 
-            <h2>LYCEE DES GLIÈRES</h2>
-            <h3>Annemasse (France)</h3>
-            <p>Baccalauréat Scientifique spécialité sciences de la vie et de la terre</p>
+            <div class="formationsColLeftRight">
+                <div class="formationsColLeft">
+                    <h2>Lycée des Glières</h2>
+                    <p>Annemasse (France)</p>
+                    <p>2014 - 2015</p>
+                </div>
+                <div class="formationsColRight">
+                    <p>Baccalauréat Scientifique spécialité sciences de la vie et de la terre</p>
+                    <p>Pendant le lycée, j'ai choisi le parcours scientifique car c'était pour moi le parcours le plus challengeant et intéressant.</p>
+                </div>
+            </div>
+
         </div>
         <div class="mainDiv"id="experiences">
             <h1>Expériences professionnels</h1>
-            <h2>Groupe ADP</h2>
-            <h3>Alternant Chargé de communication digitale</h3>
-            <ul>
-                <li>Création et optimisation du contenu éditorial selon les règles SEO</li>
-                <li>Réalisation de bannières auto-promotionnelles</li>
-                <li>Conception de maquettes graphiques et de wireframes</li>
-                <li>Assistance à Maîtrise d’Ouvrage pour des refontes de pages</li>
-                <li>Veille sur les actualités liées au transport aérien</li>
-            </ul>
+            <div class="experiencesColLeftRight">
+                <div class="experiencesColLeft">
+                    <h2>Groupe ADP</h2>
+                    <p>11/2018 - 08/2019</p>
+                </div>
+                <div class="experiencesColRight">
+                    <h3>Alternant Chargé de communication digitale</h3>
+                    <p>Création et optimisation du contenu éditorial selon les règles SEO</p>
+                    <p>Réalisation de bannières auto-promotionnelles</p>
+                    <p>Conception de maquettes graphiques et de wireframes</p>
+                    <p>Assistance à Maîtrise d’Ouvrage pour des refontes de pages</p>
+                    <p>Veille sur les actualités liées au transport aérien</p>
+                </div>
+            </div>
 
-            <h2>health.On Ventures GmbH</h2>
-            <h3>Stagiaire Assistant Business Development</h3>
-            <ul>
-                <li>Participation à des projets de référencement pour SomniShop.fr</li>
-                <li>Gestion de campagnes et d’annonces publicitaires (création et optimisation) avec Google AdWords</li>
-                <li>Conduite de campagnes de relations publiques (emailing)</li>
-                <li>Traitement des demandes des clients par téléphone</li>
-            </ul>
+            <div class="experiencesColLeftRight">
+                <div class="experiencesColLeft">
+                    <h2>health.On Ventures GmbH</h2>
+                    <p>06/2018 - 09/2018</p>
+                </div>
+                <div class="experiencesColRight">
+                    <h3>Stagiaire Assistant Business Development</h3>
+                    <p>Participation à des projets de référencement pour SomniShop.fr</p>
+                    <p>Gestion de campagnes et d’annonces publicitaires (création et optimisation) avec Google AdWords</p>
+                    <p>Conduite de campagnes de relations publiques (emailing)</p>
+                    <p>Traitement des demandes des clients par téléphone</p>
+                </div>
+            </div>
 
-            <h2>INTERMARCHÉ</h2>
-            <h3>Chef de rayon</h3>
-            <ul>
-                <li>Collaboration avec les représentants commerciaux pour l’implantation des marques en rayon, merchandising des linéaires et têtes de gondoles</li>
-                <li>Gestion de 1-2 employés, formation des nouveaux employés</li>
-                <li>Conseil clients, mise en rayon, création de promotions, réapprovisionnement</li>
-            </ul>
+            <div class="experiencesColLeftRight">
+                <div class="experiencesColLeft">
+                    <h2>3W Régie – Cdiscount</h2>
+                    <p>07/2017 - 01/2018</p>
+                </div>
+                <div class="experiencesColRight">
+                    <h3>Stagiaire Assistant Data Innovation BI</h3>
+                    <p>Création de rapports quotidiens et diffusion interne des résultats</p>
+                    <p>Suivi des KPI de campagnes publicitaires </p>
+                    <p>Réalisation de tutoriels et gestion de la diffusion des publicités</p>
+                    <p>Management, création de segments via une DMP (Data Management Plateform)</p>
+                </div>
+            </div>
+
+            <div class="experiencesColLeftRight">
+                <div class="experiencesColLeft">
+                    <h2>Intermarché</h2>
+                    <p>02/2016 - 09/2016</p>
+                </div>
+                <div class="experiencesColRight">
+                    <h3>Chef de rayon</h3>
+                    <p>Collaboration avec les représentants commerciaux pour l’implantation des marques en rayon, merchandising des linéaires et têtes de gondoles</p>
+                    <p>Gestion de 1-2 employés, formation des nouveaux employés</p>
+                    <p>Conseil clients, mise en rayon, création de promotions, réapprovisionnement</p>
+                </div>
+            </div>
+            <div class="experiencesColLeftRight">
+                <div class="experiencesColLeft">
+                    <h2>Uniqlo</h2>
+                    <p>11/2015 - 01/2016</p>
+                </div>
+                <div class="experiencesColRight">
+                    <h3>Conseiller de clientèle</h3>
+                    <p>Conseil et vente des offres et promotions, gestion de la caisse</p>
+                    <p>Merchandising, réassort et mise en valeur des vêtements en surface de vente</p>
+                    <p>Formation des nouveaux vendeurs, communication avec la clientèle internationale</p>
+                </div>
+            </div>
         </div>
+
+
         <div class="mainDiv" id="projets" a>
             <h1>Projets</h1>
             <div id="containers">
-                <img class="imagepro" src="/IMAGES/PROJETS/pro1.png" alt="">
-                <img class="imagepro" src="/IMAGES/PROJETS/pro2.png" alt="">
-                <img class="imagepro" src="/IMAGES/PROJETS/pro3.png" alt="">
+                <a href="https://csuche.github.io/FM-1-social-proof-section/" target="blank"><img class="imagepro" src="/IMAGES/PROJETS/pro1.png" alt=""></a>
+                <a href="https://csuche.github.io/FM-2-profile-card-component-main/" target="blank"><img class="imagepro" src="/IMAGES/PROJETS/pro2.png" alt=""></a>
+                <a href="https://csuche.github.io/FM-3-four-card-feature-section-master/" target="blank"><img class="imagepro" src="/IMAGES/PROJETS/pro3.png" alt=""></a>
                 <img class="imagepro" src="/IMAGES/PROJETS/pro4.png" alt="">
                 <img class="imagepro" src="/IMAGES/PROJETS/pro5.png" alt="">
                 <img class="imagepro" src="/IMAGES/PROJETS/pro6.png" alt="">
@@ -139,6 +393,7 @@
         <a href="https://www.linkedin.com/feed/" target="blank">Linkedin.com</a>
     </div>
     
+    
 </footer>
 
 <script>
@@ -151,13 +406,53 @@
 
     var sticky = navbar.offsetTop;
 
+    var boutony = document.getElementById('bouton1');  
+
     function stickyNav(){
-        if(window.pageYOffset >= sticky){
-            navbar.classList.add("sticky");
-        } else {
+        // if(window.pageYOffset >= sticky){
+        //     navbar.classList.add("sticky");
+        //     boutony.style.display = "inline-block";
+        //     boutony.classList.add('sticky2');
+        // } else {
+        //     navbar.classList.remove("sticky");
+        //     boutony.style.display = "none";
+        //     boutony.classList.remove('sticky2');
+        // }
+
+        if(window.pageYOffset <= sticky){
             navbar.classList.remove("sticky");
+            boutony.style.display = "none";
+            boutony.classList.remove('sticky2');
+        } else {
+            navbar.classList.add("sticky");
+            boutony.style.display = "inline-block";
+            boutony.classList.add('sticky2');
         }
     }
+
+    // https://css-tricks.com/how-to-make-an-unobtrusive-scroll-to-top-button/
+    var scrollDownBtn = document.getElementById("scrollDownBtn");
+    
+    var rootElement = document.documentElement;
+
+    function scrollDown(){
+        rootElement.scrollTo({
+            top: 740,
+            // behavior: "smooth" car html dans css déjà smooth
+        })
+    };
+
+    scrollDownBtn.addEventListener("click", scrollDown);
+
+
+
+    
+    // var active = getElementsByTagName('li')
+    // switch (active) {
+    //     case #profil:
+    //     active.classList.addEventListener('active');
+    //     break;
+    // }
 
     // var containers = document.getElementById('containers');
     
@@ -166,6 +461,141 @@
     // }
     // }
 
+    
+    
+    
+    // utiliser toggle https://www.w3schools.com/howto/howto_js_toggle_class.asp
+    var ok
+    
+    
+    // multicolor quand bouton appuyé https://jsbeginners.com/change-background-color-project/
+    
+    // var boutony = document.getElementById('bouton1');
+    // var mainy = document.querySelector('main');
+    
+    // boutony.addEventListener('click', functionBlack);
+    
+    // function functionBlack (){
+        //     mainy.classList.add('black')
+        // };
+        var ok
+        
+        // function myFunction (){
+            //     mainy.classList.toggle('black')
+            //     boutony.innerHTML = 'Light';
+            // };
+        
+            var mainy = document.querySelector('main');
+            var blacky = mainy.style.backgroundColor;
+            var boutony = document.getElementById('bouton1');  
+            
+            // document.querySelector('main').style.backgroundColor
+            
+            boutony.addEventListener("click", turnBlack);
+            
+            
+            function turnBlack (){
+                
+            // if(blacky !== 'black') {
+                //     mainy.classList.add('black');
+                //     boutony.innerHTML = 'Light';
+                // } else {
+                    //     mainy.classList.remove('black');
+                    //     boutony.innerHTML = 'Black';
+                    // };
+                    var mainy = document.querySelector('main');
+                    var blacky = mainy.style.backgroundColor;
+                    
+                    if( blacky === 'black') {
+                        document.querySelector('main').style.backgroundColor = 'rgb(' + 211 + ',' + 211 + ',' + 211 +')';
+                        boutony.innerHTML = 'Black';
+
+                        function darkTitles(){
+                            var i, dark, dark2;
+                            dark = document.querySelectorAll('h2', 'h3')
+                            ;
+                            dark2 = document.querySelectorAll('p');
+
+                            for (i = 0; i < dark.length; i++) {
+                                dark[i].style.color = 'black';
+                                dark2[i].style.color = 'black';
+                            }
+                        }
+                        darkTitles();
+                    } else {
+                        document.querySelector('main').style.backgroundColor = "black";
+                        boutony.innerHTML = 'Light';
+                        
+                        function lightTitles(){
+                            var i, light, light2; 
+                            light = document.querySelectorAll('h2', 'h3');
+                            light2 = document.querySelectorAll('p', 'ul.experiencesUl li');
+
+                            
+                            for (i = 0; i < light.length; i++) {
+                                light[i].style.color = "white";
+                                light2[i].style.color = 'white';
+                            }
+                        }
+                        lightTitles();
+                        
+                        // other method
+                        // var h2s = document.querySelectorAll('h2');
+                        
+                        // h2s.forEach(h2 => h2.style.color = "white");
+                    };
+                    
+                
+                    // NEED TO SOLVE THIS
+                    // if( blacky === 'black') {
+                        //     mainy.classList.remove('black');
+                        //     boutony.innerHTML = 'Black';
+                        // } else {
+                            //     mainy.classList.add('black');
+                            //     boutony.innerHTML = 'Light';
+                            // };
+                            
+                            // doesn't work
+                            // switch (blacky) {
+                                //     case 'black':
+                //     mainy.classList.remove('black');
+                //     boutony.innerHTML = 'Black';
+                //     break;
+                //     case ! 'black':
+                //     mainy.classList.add('black');
+                //     boutony.innerHTML = 'Light';
+                // }
+        };
+
+            // if(mainy.classList.contains('black')){
+            //     boutony.innerHTML = 'Light';
+            // } else {
+            //     boutony.innerHTML = 'Black';
+            //     mainy.classList.add('black');
+            // }
+            
+    
+    // boutony.addEventListener('click', toggleLight);
+    
+    // function toggleLight(){
+    //     if (mainy.classList.contains('black')) {
+    //         boutony.innerHTML = 'Black';
+    // };
+
+    // nav starting a part backgroundColor = dark
+    // var dark = document.
+
+    // suivi de la nav
+        // function nav (){
+        //     if ( getElementsByTagName('ul'). > getElementsByTagName('li')) {
+        //         document.getElementsByTagName('nav').classList.add('black');
+        //     }
+        // }
 </script>
 
 </html>
+
+<!-- les problèmes à améliorer -->
+
+<!-- onscroll trop rapide à voir, solution provisoire : .mainDiv padding-top 11rem -->
+<!-- bouton présent quand f5 -->
