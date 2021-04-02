@@ -200,6 +200,10 @@ h2{
     margin-right: -11rem;
 }
 
+#details h2{
+    margin-bottom: 3rem;
+}
+
 #imageCropper{
     order: 2;
     width: 300px;
