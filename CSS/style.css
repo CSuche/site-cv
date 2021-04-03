@@ -33,7 +33,7 @@ PARALLAX
 }
 
 #parallax{
-    background-image: url(IMAGES/mountain-5678172_1920.jpg);
+    background-image: url(../IMAGES/mountain-5678172_1920.jpg);
     background-attachment: fixed;
     /* background-repeat: no-repeat; */
     background-size: cover;
