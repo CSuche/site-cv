@@ -19,7 +19,7 @@
         <button id="scrollDownBtn">⬇️</button>
     </div>
     <nav>
-        <ul>
+        <ul class="test">
             <li><a href="#profil">Profil</a></li>
             <li><a href="#Abilities">Compétences</a></li>
             <li><a href="#formations">Formations</a></li>
@@ -77,7 +77,7 @@
                             <img src="IMAGES/star/iconmonstr-star-3.svg" alt="">
                             <img src="IMAGES/star/iconmonstr-star-3.svg" alt="">
                             <img src="IMAGES/star/iconmonstr-star-3.svg" alt="">
-                            <img src="IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="IMAGES/star/iconmonstr-star-5.svg" alt="">
                         </div>
                     </div>
                     <div class="Abilities">
@@ -86,7 +86,7 @@
                             <img src="IMAGES/star/iconmonstr-star-3.svg" alt="">
                             <img src="IMAGES/star/iconmonstr-star-3.svg" alt="">
                             <img src="IMAGES/star/iconmonstr-star-3.svg" alt="">
-                            <img src="IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="IMAGES/star/iconmonstr-star-5.svg" alt="">
                             <img src="IMAGES/star/iconmonstr-star-5.svg" alt="">
                         </div>
                     </div>
@@ -94,7 +94,7 @@
                         <P>JavaScript</P>
                         <div class="star">
                             <img src="IMAGES/star/iconmonstr-star-3.svg" alt="">
-                            <img src="IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="IMAGES/star/iconmonstr-star-5.svg" alt="">
                             <img src="IMAGES/star/iconmonstr-star-5.svg" alt="">
                             <img src="IMAGES/star/iconmonstr-star-5.svg" alt="">
                             <img src="IMAGES/star/iconmonstr-star-5.svg" alt="">
@@ -107,7 +107,7 @@
                         <div class="star">
                             <img src="IMAGES/star/iconmonstr-star-3.svg" alt="">
                             <img src="IMAGES/star/iconmonstr-star-3.svg" alt="">
-                            <img src="IMAGES/star/iconmonstr-star-3.svg" alt="">
+                            <img src="IMAGES/star/iconmonstr-star-5.svg" alt="">
                             <img src="IMAGES/star/iconmonstr-star-5.svg" alt="">
                             <img src="IMAGES/star/iconmonstr-star-5.svg" alt="">
                         </div>
@@ -421,15 +421,52 @@
         //     boutony.classList.remove('sticky2');
         // }
 
+        // if(window.pageYOffset <= sticky){
+        //     navbar.classList.remove("sticky");
+        //     boutony.style.display = "none";
+        //     boutony.classList.remove('sticky2');
+        // } else {
+        //     navbar.classList.add("sticky");
+        //     boutony.style.display = "inline-block";
+        //     boutony.classList.add('sticky2');
+        // }
+
+        var main = document.querySelector("main");
+
         if(window.pageYOffset <= sticky){
-            navbar.classList.remove("sticky");
+            navbar.style.position = "absolute";
             boutony.style.display = "none";
             boutony.classList.remove('sticky2');
+            main.style.marginTop = "0";
+            navbar.style.marginTop = "1000px";
+            // navbar.style.marginTop = "860px";
         } else {
-            navbar.classList.add("sticky");
+            navbar.style.display = "inline-block";
+            navbar.style.position = "fixed";
             boutony.style.display = "inline-block";
             boutony.classList.add('sticky2');
+            navbar.style.top = "0";
+            navbar.style.marginTop = "200px";
         }
+
+
+
+        // make it appear after pageYOffset > sticky
+        // var main = document.querySelector("main");
+
+        // if(window.pageYOffset <= sticky){
+        //     navbar.style.display = "none";
+        //     boutony.style.display = "none";
+        //     boutony.classList.remove('sticky2');
+        //     main.style.marginTop = " 0";
+        // } else {
+        //     navbar.style.display = "block";
+        //     navbar.style.position = "fixed";
+        //     boutony.style.display = "inline-block";
+        //     boutony.classList.add('sticky2');
+        //     navbar.style.top = "0";
+        //     navbar.style.marginTop = " 20px";
+        // }
     }
 
     // https://css-tricks.com/how-to-make-an-unobtrusive-scroll-to-top-button/

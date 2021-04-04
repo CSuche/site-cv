@@ -33,7 +33,7 @@ PARALLAX
 }
 
 #parallax{
-    background-image: url(/IMAGES/mountain-5678172_1920.jpg);
+    background-image: url(../IMAGES/mountain-5678172_1920.jpg);
     background-attachment: fixed;
     /* background-repeat: no-repeat; */
     background-size: cover;
@@ -68,7 +68,7 @@ PARALLAX
     /* top: 0px;
     width: 100%; */
     /* left: 80%; */
-    top: 0px;
+    top: 700px;
 }
 
 .sticky2{
@@ -82,7 +82,7 @@ nav{
     /* background: rgb(144, 154, 214); */
     background: rgb(46, 73, 230);
     /* height: auto; */
-    height: 15rem;
+    height: 20rem;
     width: 14rem;
     margin-top: 4rem;
     margin-left: 80%;
@@ -95,15 +95,13 @@ nav{
 nav ul{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
-    align-items: center;
-    /* height: 3rem; */
-    height: auto;
 }
 
 nav li{
     list-style: none;
-    margin-bottom: 1rem;
+    padding: 0.935rem 0;
+    text-align: center;
+    width: 14rem;
 }
 
 /* nav{
@@ -118,9 +116,7 @@ nav li{
 nav a{
     text-decoration: none;
     color: seashell;
-    /* height: 100%; */
-    /* width: 100%; */
-    padding: 0.94rem 4rem;
+    /* padding: 0.94rem 4rem; */
 }
 
 nav li:hover{
