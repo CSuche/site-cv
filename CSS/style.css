@@ -179,7 +179,7 @@ PROFIL
     /* margin-left: -5rem; */
 }
 
-#profil, #formations, #projets{
+#profil, #competences, #projets{
     background: white;
 }
 
@@ -187,7 +187,7 @@ PROFIL
     padding-bottom: 8rem;
 }
 
-#profil h1, #Abilities h1, #formations h1, #experiences h1{
+#profil h1, #competences h1, #formations h1, #experiences h1{
     border-bottom: 1px solid black;
     padding-bottom: 3rem;
 }
@@ -241,7 +241,7 @@ PROFIL
 /*  ====
     SKILLS 
 ======== */
-.AbilitiesColLeftRight{
+.competencesColLeftRight{
     display: flex;
     justify-content: space-between;
     margin-bottom: 1.5rem;
@@ -250,11 +250,11 @@ PROFIL
     width: 80%;
 }
 
-.lastAbilities{
+.lastCompetences{
     border-bottom: none;
 }
 
-.AbilitiesColLeft, .AbilitiesColRight{
+.competencesColLeft, .competencesColRight{
     width: 48%;
 }
 
@@ -262,24 +262,24 @@ PROFIL
     margin-bottom: 1rem;
 }
 
-.Abilities{
+.competences{
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.5rem;
 }
 
-.Abilities:hover{
+.competences:hover{
     /* background: rgb(182, 187, 207); */
     background: seashell;
     transition: 0.2s;
 }
 
-.Abilities:hover .star img{
+.competences:hover .star img{
     margin-left: 0.2rem;
     transition: 0.2s;
 }
 
-.Abilities .star img{
+.competences .star img{
     transition: 0.2s;
 }
 
