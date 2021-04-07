@@ -369,16 +369,38 @@ footer a:hover{
     flex-direction: column;
 }
 
-#scrollDownBtn {
+/* #scrollDownBtn {
     background-color: rgb(255, 255, 255);
     border: none;
     border-radius: 10%;
     color: white;
-    cursor: pointer;
     font-size: 3rem;
     line-height: 5rem;
-    width: 5rem;
-    /* margin: 18rem 0 0 72rem; */
-    margin: 15rem 0 0 85rem;
-  }
+} */
 
+@keyframes float {
+    from {
+        transform: translateY(0);
+        background-position: 0;
+    }
+
+    50% {
+        transform: translateY(-1rem);
+        background-position: 0 1rem;
+    }
+    
+    to {
+        transform: translateY(0);
+        background-position: 0;
+    }
+}
+
+#scrollDownBtn {
+    width: 6rem;
+    margin: 15rem 0 0 85rem;
+    cursor: pointer;
+    animation-duration: 2s;
+    animation-name: float;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
