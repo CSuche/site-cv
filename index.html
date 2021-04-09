@@ -15,55 +15,57 @@
 </head>
 <body>
     <!-- parralax https://www.w3schools.com/howto/howto_css_parallax.asp -->
-    <div id="parallax">
-        <h1>Nicolas T</h1>
-        <h4>Interactive resume</h4>
-        <img id="scrollDownBtn" src="IMAGES/cloud.png" alt="">
-        <!-- <button id="scrollDownBtn">⬇️<img src="/IMAGES/cloud.png" alt=""></button> -->
+    <div id="top">
+        <div id="parallax">
+            <h1>Nicolas T</h1>
+            <h4>Interactive resume</h4>
+            <img id="scrollDownBtn" src="IMAGES/cloud.png" alt="">
+            <!-- <button id="scrollDownBtn">⬇️<img src="/IMAGES/cloud.png" alt=""></button> -->
+        </div>
+        <nav>
+            <ul class="test">
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#experiences">Expériences professionnels</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#formations">Formations</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="bouton1" class="sticky2">Black</button>
     </div>
-    <nav>
-        <ul class="test">
-            <li><a href="#profil">Profil</a></li>
-            <li><a href="#experiences">Expériences professionnels</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#formations">Formations</a></li>
-            <li><a href="#projets">Projets</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <!-- <a class="nav" href="#profil">Profil</a>
-        <a class="nav" href="#competences">competences</a>
-        <a class="nav" href="#formations">Formations</a>
-        <a class="nav" href="#experiences">Expériences professionnels</a>
-        <a class="nav" href="#projets">Projets</a>
-        <a class="nav" href="#contact">Contact</a> -->
 
-    </nav>
-    <button id="bouton1" class="sticky2">Black</button>
     <main>
         
         <div class="mainDiv" id="profil">
             
             <h1>Profil</h1>
             <div id="sousProfil">
-                <div class="profil" id="about">
-                    <h2>À propos de moi</h2>
-                    <p>Fort d’une expérience à l’international (Allemagne et Indonésie), j’ai développé mes connaissances et mes compétences chez Orange, Intermarché, Uniqlo, Cdiscount et Groupe ADP durant 2 ans. Diplômé de Montpellier Business School, je suis à la recherche d’un nouveau challenge dans le digital. 
-                    </p>
+                <div id="sousSousProfil">
+                    <div class="profil" id="about">
+                        <h2>À propos de moi</h2>
+                        <p>Fort d’une expérience à l’international (Allemagne et Indonésie), j’ai développé mes connaissances et mes compétences chez Orange, Intermarché, Uniqlo, Cdiscount et Groupe ADP durant 2 ans. Diplômé de Montpellier Business School, je suis à la recherche d’un nouveau challenge dans le digital. 
+                        </p>
+                    </div>
+                    <!-- cropper https://medium.com/@biancapower/how-to-make-a-rectangle-image-a-circle-in-css-2f392bc9abd3 -->
+                    <div id="imageCropper" class="profil"><img src="IMAGES/IMG-20191102-WA0021 .jpg" alt=""></div>
                 </div>
                 <div class="profil" id="details">
-                    <h2>Détails</h2>
-                    <h3>Prénom et nom :</h3>
-                    <p>Nicolas T</p>
-                    <h3>Âge :</h3>
-                    <p>27 ans</p>
-                    <h3>Adresse :</h3>
-                    <p>France</p>
-                    <h2>Pourquoi développeur Front-End ?</h2>
-                    <p>Afin d'être capable de créer de manière intuitive le contenu d'une page web.</p>
+                    <div>
+                        <h2>Détails</h2>
+                        <h3>Prénom et nom :</h3>
+                        <p>Nicolas T</p>
+                        <h3>Âge :</h3>
+                        <p>27 ans</p>
+                        <h3>Adresse :</h3>
+                        <p>France</p>
+                    </div>
+                    <div>
+                        <h2>Pourquoi développeur Front-End ?</h2>
+                        <p>Afin d'être capable de créer de manière intuitive le contenu d'une page web.</p>
+                    </div>
                 </div>
                 
-                <!-- cropper https://medium.com/@biancapower/how-to-make-a-rectangle-image-a-circle-in-css-2f392bc9abd3 -->
-                <div id="imageCropper" class="profil"><img src="IMAGES/IMG-20191102-WA0021 .jpg" alt=""></div>
             </div>
              
         </div>
@@ -363,7 +365,7 @@
                 </div>
             </div>
 
-            <div class="formationsColLeftRight">
+            <!-- <div class="formationsColLeftRight">
                 <div class="formationsColLeft">
                     <h2>Lycée des Glières</h2>
                     <p>Annemasse (France)</p>
@@ -373,7 +375,7 @@
                     <p>Baccalauréat Scientifique spécialité sciences de la vie et de la terre</p>
                     <p>Pendant le lycée, j'ai choisi le parcours scientifique car c'était pour moi le parcours le plus challengeant et intéressant.</p>
                 </div>
-            </div>
+            </div> -->
 
         </div>
 

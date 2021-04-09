@@ -1,3 +1,38 @@
+/*  ====
+PARALLAX 
+======== */
+
+/*  ====
+    NAV + BUTTON
+======== */
+
+/*  ====
+    MAIN 
+======== */
+
+/*  ====
+PROFIL 
+======== */
+
+/*  ====
+    SKILLS 
+======== */
+
+/*  ====
+    FORMATIONS - EXPERIENCES
+======== */
+
+/*  ====
+EXPERIENCES 
+======== */
+
+/*  ====
+    PROJETS 
+======== */
+
+/*  ====
+    FOOTER 
+======== */
 *{
     padding: 0;
     margin: 0;
@@ -23,6 +58,10 @@ p{
 PARALLAX 
 ======== */
 
+#top{
+    position: relative;
+}
+
 .black{
     background-color: black;
     transition: 0.3s;
@@ -46,19 +85,67 @@ PARALLAX
     /* height: 700px; */
     /* bizarre 100vh pourquoi */
     /* line-height: 100vh; */
+    /* position: absolute; */
+    /* top: 45%;
+    left: 40%; */
     color: seashell;
     font-size: 3rem;
     border-bottom: 1px solid seashell;
     width: 24rem;
     margin-bottom: 1rem;
     margin: auto;
-    padding-top: 19rem;
+    padding-top: 20%;
+    /* padding-top: 19rem; */
     text-align: start;
+    
 }
 
 #parallax h4{
+    /* position: absolute; */
+    /* top: 55%; */
+    /* left: 45%; */
     color: seashell;
-    margin-left: 49rem;
+    /* margin-left: 10rem; */
+    margin-left: 51%;
+}
+
+/* #scrollDownBtn {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10%;
+    color: white;
+    font-size: 3rem;
+    line-height: 5rem;
+} */
+
+@keyframes float {
+    from {
+        transform: translateY(0);
+        background-position: 0;
+    }
+
+    50% {
+        transform: translateY(-1rem);
+        background-position: 0 1rem;
+    }
+    
+    to {
+        transform: translateY(0);
+        background-position: 0;
+    }
+}
+
+#scrollDownBtn {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    width: 6rem;
+    /* margin: 15rem 0 0 85rem; */
+    cursor: pointer;
+    animation-duration: 2s;
+    animation-name: float;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 /*  ====
     NAV + BUTTON
@@ -175,8 +262,15 @@ PROFIL
 #sousProfil{
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     /* margin-left: -5rem; */
+}
+
+#sousSousProfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 53%;
 }
 
 #profil, #competences, #projets{
@@ -185,6 +279,7 @@ PROFIL
 
 #profil{
     padding-bottom: 8rem;
+    width: 100;
 }
 
 #profil h1, #competences h1, #formations h1, #experiences h1{
@@ -193,7 +288,7 @@ PROFIL
 }
 
 .profil{
-    margin-right: 11rem;
+    /* margin-right: 11rem; */
 }
 
 .profil p{
@@ -204,11 +299,12 @@ PROFIL
 #about{
     width: 200px;
     order: 1;
+    /* margin-right: 10rem; */
 }
 
 #details{
     order: 3;
-    margin-right: -11rem;
+    margin-right: 14.5rem;
     width: 11rem;
 }
 
@@ -222,8 +318,10 @@ PROFIL
 
 #imageCropper{
     order: 2;
-    width: 300px;
-    height: 300px;
+    height: 18rem;
+    width: 18rem;
+    /* height: 300px; */
+    /* width: 300px; */
     /* position: relative; */
     overflow: hidden;
     border-radius: 50%;
@@ -236,6 +334,18 @@ PROFIL
     margin-left: -25%;
     height: 100%;
     width: auto;
+}
+
+/*  ====
+EXPERIENCES 
+======== */
+
+.experiencesColRight{
+    margin-bottom: 2rem;
+}
+
+.experiencesColRight h3{
+    margin-bottom: 1rem;
 }
 
 /*  ====
@@ -305,35 +415,20 @@ PROFIL
 }
 
 /*  ====
-EXPERIENCES 
-======== */
-
-.experiencesColRight{
-    margin-bottom: 2rem;
-}
-
-.experiencesColRight h3{
-    margin-bottom: 1rem;
-}
-
-
-
-/*  ====
     PROJETS 
 ======== */
 
 #containers{
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     width: 90%;
-    margin: 0 auto;
+    margin: 0 0 0 -1rem;
     gap: 2rem;
 }
 
 .imagepro{
-    width: 100%;
-    height: 100%;
+    width: 90%;
     background-size: cover;
 }
 
@@ -369,38 +464,287 @@ footer a:hover{
     flex-direction: column;
 }
 
-/* #scrollDownBtn {
-    background-color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 10%;
-    color: white;
-    font-size: 3rem;
-    line-height: 5rem;
-} */
+/* mobile section */
 
-@keyframes float {
-    from {
-        transform: translateY(0);
-        background-position: 0;
-    }
+@media only screen and (max-width: 1200px) {
 
-    50% {
-        transform: translateY(-1rem);
-        background-position: 0 1rem;
-    }
-    
-    to {
-        transform: translateY(0);
-        background-position: 0;
-    }
+/*  ====
+PARALLAX 
+======== */
+
+/*  ====
+    NAV + BUTTON
+======== */
+
+nav{
+    margin-left: 75%;
 }
 
-#scrollDownBtn {
-    width: 6rem;
-    margin: 15rem 0 0 85rem;
-    cursor: pointer;
-    animation-duration: 2s;
-    animation-name: float;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+/*  ====
+    MAIN 
+======== */
+
+/*  ====
+PROFIL 
+======== */
+
+#sousProfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sousSousProfil{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+#details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}
+
+#details div:first-child{
+    margin-right: 11rem;
+}
+
+/*  ====
+EXPERIENCES 
+======== */
+
+/*  ====
+    SKILLS 
+======== */
+
+/*  ====
+    FORMATIONS - EXPERIENCES
+======== */
+
+
+
+/*  ====
+    PROJETS 
+======== */
+
+/*  ====
+    FOOTER 
+======== */
+
+
+}
+
+@media only screen and (max-width: 935px) {
+
+    /*  ====
+    PARALLAX 
+    ======== */
+    
+    /*  ====
+        NAV + BUTTON
+    ======== */
+    
+    nav{
+        margin-left: 65%;
+    }
+
+    /*  ====
+        MAIN 
+    ======== */
+
+    /*  ====
+    PROFIL 
+    ======== */
+    
+    #sousProfil{
+        display: block;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 80%;
+    }
+    
+    #sousSousProfil{
+        display: block;
+        flex-direction: column;
+        width: 80%;
+    }
+    
+    #imageCropper{
+    margin-bottom: 5rem;
+    }
+
+
+    #details{
+        display: block;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 60%;
+        margin-right: 0;
+    }
+    
+    #details div:first-child{
+        margin-right: 0rem;
+        margin-bottom: 5rem;
+    }
+    
+    /*  ====
+    EXPERIENCES 
+    ======== */
+    
+    #experiences, #competences, #formations{
+        width: 55%;
+    }
+
+    .experiencesColLeft, .formationsColLeft{
+        width: 100%;
+    }
+
+    .experiencesColLeft h2, .experiencesColLeft p:nth-child(2){
+        text-align: center;
+        margin-left: -6rem;
+    }
+
+    .experiencesColLeftRight, .formationsColLeftRight{
+        display:inline;
+    }
+
+    .experiencesColRight, .formationsColRight{
+        margin-bottom: 4rem;
+    }
+    
+    .experiencesColRight h3{
+        margin-bottom: 1rem;
+    }
+
+    /*  ====
+        SKILLS 
+    ======== */
+    
+    #competences{
+        width: 70%;
+    }
+    
+    .competencesColLeftRight{
+        display: inline;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid grey;
+        width: 80%;
+    }
+    
+    .lastCompetences{
+        border-bottom: none;
+    }
+    
+    .competencesColLeft, .competencesColRight{
+        width: 80%;
+    }
+    
+    .competences, .competences h2{
+        margin-right: 7rem;
+    }
+
+    .mainDiv h2{
+        margin-bottom: 1rem;
+    }
+    
+    .competences{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+    }
+    
+    .competences:hover{
+        /* background: rgb(182, 187, 207); */
+        background: seashell;
+        transition: 0.2s;
+    }
+    
+    .competences:hover .star img{
+        margin-left: 0.2rem;
+        transition: 0.2s;
+    }
+    
+    .competences .star img{
+        transition: 0.2s;
+    }
+
+    /*  ====
+        FORMATIONS - EXPERIENCES
+    ======== */
+
+    .formationsColLeft h2, .formationsColLeft p:nth-child(2), .formationsColLeft p:nth-child(3){
+        text-align: center;
+        margin-left: -6rem;
+    }
+
+    /*  ====
+        PROJETS 
+    ======== */
+    
+    #containers{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: 0 0 0 -1rem;
+        gap: 2rem;
+    }
+    
+    .imagepro{
+        width: 80%;
+        background-size: cover;
+    }
+
+    /*  ====
+        FOOTER 
+    ======== */
+    
+    
+    }
+
+@media only screen and (max-width: 600px) {
+
+/*  ====
+PARALLAX 
+======== */
+
+/*  ====
+    NAV + BUTTON
+======== */
+
+nav{
+    display: none;
+}
+
+/*  ====
+    MAIN 
+======== */
+
+/*  ====
+PROFIL 
+======== */
+
+/*  ====
+EXPERIENCES 
+======== */
+
+/*  ====
+    SKILLS 
+======== */
+
+/*  ====
+    FORMATIONS - EXPERIENCES
+======== */
+
+/*  ====
+    PROJETS 
+======== */
+
+/*  ====
+    FOOTER 
+======== */
+
 }
