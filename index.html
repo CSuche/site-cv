@@ -446,6 +446,14 @@
     shad4 = document.getElementById('formations');
     shad5 = document.getElementById('projets');
 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 ) {
+    document.querySelectorAll('li').classList.add('active');
+  }
+}
+
 
 // var mainDiv = document.querySelectorAll('mainDiv');
 // for(var u = 0; mainDiv < mainDiv.length; u++) {
