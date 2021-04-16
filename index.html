@@ -10,26 +10,41 @@
     <!-- police -->
     <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- bouton burger -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- jquery -->
     <script src="jquery-3.5.1.min.js"></script>
 </head>
 <body>
     <!-- parralax https://www.w3schools.com/howto/howto_css_parallax.asp -->
     <div id="top">
-        <div id="parallax">
-            <h1>Nicolas T</h1>
-            <h4>Interactive resume</h4>
-            <img id="scrollDownBtn" src="IMAGES/cloud.png" alt="">
-            <!-- <button id="scrollDownBtn">⬇️<img src="/IMAGES/cloud.png" alt=""></button> -->
+        <div id="burger">
+            <div id="parallax">
+                <h1>Nicolas T</h1>
+                <h4>Interactive resume</h4>
+                <img id="scrollDownBtn" src="IMAGES/cloud.png" alt="">
+                <!-- <button id="scrollDownBtn">⬇️<img src="/IMAGES/cloud.png" alt=""></button> -->
+            </div>
+            <button class="ham">
+                <!-- material icons https://material.io/resources/icons/ -->
+                <span class="menuIcon material-icons">
+                  menu
+                </span>
+                <span class="xIcon material-icons">
+                  close
+                </span>
+            </button>
         </div>
         <nav>
-            <ul class="test">
-                <li><a href="#profil">Profil</a></li>
-                <li><a href="#experiences">Expériences professionnels</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#formations">Formations</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="test menu">
+                <li><a class="menuLink" href="#profil">Profil</a></li>
+                <li><a class="menuLink" href="#experiences">Expériences professionnels</a></li>
+                <li><a class="menuLink" href="#competences">Compétences</a></li>
+                <li><a class="menuLink" href="#formations">Formations</a></li>
+                <li><a class="menuLink" href="#projets">Projets</a></li>
+                <li><a class="menuLink" href="#contact">Contact</a></li>
             </ul>
         </nav>
         <button id="bouton1" class="sticky2">Black</button>
@@ -406,6 +421,36 @@
 </footer>
 
 <script>
+
+// https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
+
+var menu = document.querySelector(".menu");
+var ham = document.querySelector(".ham");
+var xIcon = document.querySelector(".xIcon");
+var menuIcon = document.querySelector(".menuIcon");
+
+ham.addEventListener("click", toggleMenu);
+
+// toggle menu in and out when clicking on the hamburger
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    xIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    xIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
+}
+
+var menuLinks = document.querySelectorAll(".menuLink");
+
+menuLinks.forEach( 
+  function(menuLink) { 
+    menuLink.addEventListener("click", toggleMenu);
+  }
+)
 
     // var ul = document.querrySelector('ul');
     // var li = document.querrySelectorAll('nav li');
