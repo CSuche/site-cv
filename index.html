@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV de Nicolas</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <!-- <link rel="stylesheet" href="script.js"> -->
+    <!-- <script src="path/to/script.js" async></script> -->
 
     <!-- police -->
     <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
@@ -27,7 +29,7 @@
                 <img id="scrollDownBtn" src="IMAGES/cloud.png" alt="">
                 <!-- <button id="scrollDownBtn">⬇️<img src="/IMAGES/cloud.png" alt=""></button> -->
             </div>
-            <button class="ham">
+            <button id="ham" class="ham">
                 <!-- material icons https://material.io/resources/icons/ -->
                 <span class="menuIcon material-icons">
                   menu
@@ -38,7 +40,7 @@
             </button>
         </div>
         <nav>
-            <ul class="test menu">
+            <ul class="menu">
                 <li><a class="menuLink" href="#profil">Profil</a></li>
                 <li><a class="menuLink" href="#experiences">Expériences professionnels</a></li>
                 <li><a class="menuLink" href="#competences">Compétences</a></li>
@@ -422,35 +424,37 @@
 
 <script>
 
-// https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
+    // https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0
 
-var menu = document.querySelector(".menu");
-var ham = document.querySelector(".ham");
-var xIcon = document.querySelector(".xIcon");
-var menuIcon = document.querySelector(".menuIcon");
+    var menu = document.querySelector(".menu");
+    var ham = document.querySelector(".ham");
+    var menuIcon = document.querySelector(".menuIcon");
+    var xIcon = document.querySelector(".xIcon");
 
-ham.addEventListener("click", toggleMenu);
+    ham.addEventListener("click", toggleMenu);
 
-// toggle menu in and out when clicking on the hamburger
-function toggleMenu() {
-  if (menu.classList.contains("showMenu")) {
-    menu.classList.remove("showMenu");
-    xIcon.style.display = "none";
-    menuIcon.style.display = "block";
-  } else {
-    menu.classList.add("showMenu");
-    xIcon.style.display = "block";
-    menuIcon.style.display = "none";
-  }
-}
+    // toggle menu in and out when clicking on the hamburger
+    function toggleMenu() {
+    if (menu.classList.contains("showMenu")) {
+        menu.classList.remove("showMenu");
+        xIcon.style.display = "none";
+        menuIcon.style.display = "block";
+    } else {
+        menu.classList.add("showMenu");
+        // menu.style.marginTop = "1000px";
+        xIcon.style.display = "block";
+        menuIcon.style.display = "none";
+    }
+    }
 
-var menuLinks = document.querySelectorAll(".menuLink");
+    var menuLinks = document.querySelectorAll(".menuLink");
 
-menuLinks.forEach( 
-  function(menuLink) { 
-    menuLink.addEventListener("click", toggleMenu);
-  }
-)
+    menuLinks.forEach( 
+    function(menuLink) { 
+        menuLink.addEventListener("click", toggleMenu);
+    }
+    )
+    // FIN BURGER
 
     // var ul = document.querrySelector('ul');
     // var li = document.querrySelectorAll('nav li');
@@ -520,9 +524,20 @@ function scrollFunction() {
 //         };
 //     }
 //     if (yOffset > shad1){
-//         b.classList.add('active');
-//     }
+    //         b.classList.add('active');
+    //     }
+    
+    
 
+
+
+
+    
+    
+
+
+
+   
 
 
 
@@ -535,6 +550,10 @@ function scrollFunction() {
     var sticky = navbar.offsetTop;
 
     var boutony = document.getElementById('bouton1');  
+
+
+
+
 
     function stickyNav(){
         // if(window.pageYOffset >= sticky){
@@ -559,20 +578,45 @@ function scrollFunction() {
 
         var main = document.querySelector("main");
 
+        // if(window.pageYOffset <= sticky){
+        //     navbar.style.position = "absolute";
+        //     boutony.style.display = "none";
+        //     boutony.classList.remove('sticky2');
+        //     main.style.marginTop = "0";
+        //     navbar.style.marginTop = "1000px";
+        // } else {
+        //     navbar.style.display = "inline-block";
+        //     navbar.style.position = "fixed";
+        //     boutony.style.display = "inline-block";
+        //     boutony.classList.add('sticky2');
+        //     navbar.style.top = "0";
+        //     navbar.style.marginTop = "200px";
+        // }
+
         if(window.pageYOffset <= sticky){
             navbar.style.position = "absolute";
             boutony.style.display = "none";
             boutony.classList.remove('sticky2');
             main.style.marginTop = "0";
             navbar.style.marginTop = "1000px";
-            // navbar.style.marginTop = "860px";
-        } else {
+            // https://stackoverflow.com/questions/28607265/execute-javascript-code-only-if-width-is-higher-than-x-pixels
+        } else if(document.documentElement.clientWidth > 600) {
             navbar.style.display = "inline-block";
             navbar.style.position = "fixed";
             boutony.style.display = "inline-block";
             boutony.classList.add('sticky2');
             navbar.style.top = "0";
             navbar.style.marginTop = "200px";
+        } else {
+            // navbar.style.display = "none";
+            navbar.style.position = "relative";
+            document.getElementById("ham").classList.add = "ham";
+            
+            menu.style.position ="fixed";
+            navbar.style.marginTop = "-200px";
+            // menu.style.marginRight = "50px";
+            // ham.style.marginRight = "50px";
+
         }
 
 
