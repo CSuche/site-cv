@@ -351,7 +351,7 @@ function scrollFunction() {
                 //     mainy.classList.add('black');
                 //     boutony.innerHTML = 'Light';
                 // }
-            };
+        };
 
             // if(mainy.classList.contains('black')){
             //     boutony.innerHTML = 'Light';

@@ -737,11 +737,26 @@ body{
     /* min-width: 100%; */
 }
 
+/* EN COURS 15/09 
+
+h1{
+    font-size: 5rem;
+}
+
+p, li a{
+    font-size: 2rem;
+}
+
+.menu {
+    /* width: 4rem;
+}
+
+*/
+
+
 nav{
     background-color: white;
 }
-
-
 
 .ham {
     display: block;
